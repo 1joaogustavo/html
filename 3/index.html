@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário</title>
+</head>
+<body>
+    <form action="/pagina-processa-dados-do-form" method="post">
+    <fieldset>
+        <legend>dados gerais</legend>
+        <label for="nome">nome</label>
+        <input type="text" minlength="3" id="nome" />
+
+        <label for="data_nascimento">data de data nascimento:</label>
+        <input type="text" id="data_nascimento">
+
+        <label for="cpf"> CPF:</label>
+        <input type="cpf" minlength="11" id="cpf"/>
+
+    
+    </fieldset>
+
+    <fieldset>
+        <legend>endereço</legend>
+
+        <label for="tipo_endereço">tipo</label> 
+        <select id="tipo_endereço">
+            <option value="">selecione</option>
+            <option value="">rua</option>
+            <option value="">estrada</option>
+            <option value="">rodovia</option>
+            <option value="">outros</option>
+    
+        </select>
+      
+        <label for="lagradouro_endereco">logradouro</label>
+        <input type="text" id="lagradouro_endereco">
+
+        <label for="complemento_endereco">complemento</label>
+        <input type="text" id="complemento_endereco">
+
+    </fieldset>
+
+    <fieldset>
+        <legend>fale conosco</legend>
+
+        <label for="msg">mensagem</label>
+        <textarea type="text" id="msg"></textarea>
+    </fieldset>
+    <fieldset>
+        <button type="submit"> enviar mensagem </button>
+        <button type="reset">limpar formulário</button>
+    </fieldset>
+    </form>
+</body>
+</html>
